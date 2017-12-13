@@ -33,7 +33,7 @@ public class Warrior {
     }
 
     public int Rage(int Power) {
-        return Power * 2.5;
+        return Power * 3;
     }
 
     public int Excalibur(int Power, int Mana){

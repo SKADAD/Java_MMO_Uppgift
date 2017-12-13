@@ -1,8 +1,11 @@
 package CharacterPack;
 
+
 import ItemPack.Items;
 
 import java.util.ArrayList;
+
+
 
 public class Character {
     private String name;

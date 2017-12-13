@@ -6,7 +6,7 @@ public class Wizard {
     private int baseMana;
     private int baseHp;
 
-    public Wizard(int basePower, int baseArmor, int baseMana, int baseHp) {
+    public Wizard() {
         this.basePower = 10;
         this.baseArmor = 10;
         this.baseMana = 50;

@@ -8,7 +8,7 @@ public class Warrior {
     private int baseMana;
     private int baseHp;
 
-    public Warrior(int basePower, int baseArmor, int baseMana, int baseHp) {
+    public Warrior() {
         this.basePower = 40;
         this.baseArmor = 25;
         this.baseMana = 10;

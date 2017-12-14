@@ -1,14 +1,26 @@
 package NpcPack;
 
 public class Bosses {
+    private String Name;
     private int BasePower;
     private int BaseArmor;
     private int BaseHp;
+    private String Type;
 
-    public Bosses(int basePower, int baseArmor, int baseHp) {
-        BasePower = 40;
-        BaseArmor = 50;
+    public Bosses(String Name, int basePower, int baseArmor, int baseHp, String Type) {
+       this.Name = Name;
+        BasePower = 50;
+        BaseArmor = 65;
         BaseHp = 500;
+        this.Type = Type;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public String getType() {
+        return Type;
     }
 
     public int getBasePower() {

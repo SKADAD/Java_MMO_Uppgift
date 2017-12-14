@@ -1,7 +1,8 @@
 package CharacterPack;
 
 
-import ItemPack.Items;
+import ItemPack.CharItems;
+import ItemPack.CharItems;
 
 import java.util.ArrayList;
 
@@ -15,8 +16,8 @@ public class Character {
     private int hp;
     private int mana;
     private int power;
-    private ArrayList<Items> bag;
-    private ArrayList<Items> equipedItems;
+    private ArrayList<CharItems> bag;
+    private ArrayList<CharItems> equipedItems;
     private ArrayList<Character> friendList;
 
     public Character(String name, String gender,int classes) {
@@ -79,11 +80,11 @@ public class Character {
         return power;
     }
 
-    public ArrayList<Items> getBag() {
+    public ArrayList<CharItems> getBag() {
         return bag;
     }
 
-    public ArrayList<Items> getEquipedItems() {
+    public ArrayList<CharItems> getEquipedItems() {
         return equipedItems;
     }
 

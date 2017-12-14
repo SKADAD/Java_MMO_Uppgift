@@ -45,16 +45,16 @@ public class Bosses {
     public String typeToReturn(String Input){
         String Type = "";
         if(Input == "1"){
-            Type = "Wolf";
+            Type = "Yeti";
         }
         else if(Input == "2"){
-            Type = "Spider";
+            Type = "Demon";
         }
         else if(Input == "3"){
-            Type = "Zombie";
+            Type = "Gargantuan";
         }
         else if(Input == "4"){
-            Type = "Humanoid";
+            Type = "Dragon";
         }
         return Type;
 

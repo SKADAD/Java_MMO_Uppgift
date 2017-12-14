@@ -51,13 +51,13 @@ public class Mobs {
     public String typeToReturn(String Input) {
         String Type = "";
         if (Input == "1") {
-            Type = "Yeti";
+            Type = "Wolf";
         } else if (Input == "2") {
-            Type = "Demon";
+            Type = "Spider";
         } else if (Input == "3") {
-            Type = "Gargantuan";
+            Type = "Zombie";
         } else if (Input == "4") {
-            Type = "Dragon";
+            Type = "Humanoid";
         }
         return Type;
     }

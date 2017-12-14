@@ -41,4 +41,22 @@ public class Bosses {
     public int special(int Power){
         return Power*3;
     }
+
+    public String typeToReturn(String Input){
+        String Type = "";
+        if(Input == "1"){
+            Type = "Wolf";
+        }
+        else if(Input == "2"){
+            Type = "Spider";
+        }
+        else if(Input == "3"){
+            Type = "Zombie";
+        }
+        else if(Input == "4"){
+            Type = "Humanoid";
+        }
+        return Type;
+
+    }
 }

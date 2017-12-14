@@ -44,8 +44,23 @@ public class Mobs {
         return BaseHp;
     }
 
-    public int attack(int Power){
+    public int attack(int Power) {
         return Power;
     }
+
+    public String typeToReturn(String Input) {
+        String Type = "";
+        if (Input == "1") {
+            Type = "Yeti";
+        } else if (Input == "2") {
+            Type = "Demon";
+        } else if (Input == "3") {
+            Type = "Gargantuan";
+        } else if (Input == "4") {
+            Type = "Dragon";
+        }
+        return Type;
+    }
+
 
 }

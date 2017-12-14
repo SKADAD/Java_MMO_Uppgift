@@ -15,7 +15,7 @@ public class Mobs {
         BasePower = 35;
         BaseArmor = 15;
         BaseHp = 120;
-        Neutral = false;
+        this.Neutral = false; // Ska vi ha neutral mobs? Står inte som krav så vi kan skippa det krånglet :D:D:D:D:D
         this.Type = Type;
 
     }

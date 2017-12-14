@@ -6,9 +6,9 @@ public class EquipableItems {
     private String Weapon;
 
     public EquipableItems(String helm, String cloak, String weapon) {
-        Helm = helm;
-        Cloak = cloak;
-        Weapon = weapon;
+        this.Helm = helm;
+        this.Cloak = cloak;
+        this.Weapon = weapon;
     }
 
     public String getHelm() {
@@ -33,5 +33,10 @@ public class EquipableItems {
 
     public void setWeapon(String weapon) {
         Weapon = weapon;
+    }
+
+    public int MasterSwordAndMirrorShield(int Stats){
+        int powerStat = 50;
+        return powerStat;
     }
 }

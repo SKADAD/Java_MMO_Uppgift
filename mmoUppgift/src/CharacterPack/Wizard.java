@@ -29,11 +29,11 @@ public class Wizard {
         return baseHp;
     }
 
-    public int LightningBold(int Power){
+    public int LightningBolt(int Power){
         return Power*3;
     }
 
     public int Heal(int HP){
-        return HP;
+        return HP/2;
     }
 }

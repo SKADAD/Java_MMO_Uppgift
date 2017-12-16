@@ -5,8 +5,8 @@ public class ConsumableItems {
     private String ManaPot;
 
     public ConsumableItems(String healingPot, String manaPot) {
-        HealingPot = healingPot;
-        ManaPot = manaPot;
+        this.HealingPot = healingPot;
+        this.ManaPot = manaPot;
     }
 
     public String getHealingPot() {

@@ -42,18 +42,18 @@ public class Bosses {
         return Power*3;
     }
 
-    public String typeToReturn(String Input){
+    public String typeToReturn(String Dungeon){
         String Type = "";
-        if(Input == "1"){
+        if(Dungeon == "1"){
             Type = "Yeti";
         }
-        else if(Input == "2"){
+        else if(Dungeon == "2"){
             Type = "Demon";
         }
-        else if(Input == "3"){
+        else if(Dungeon == "3"){
             Type = "Gargantuan";
         }
-        else if(Input == "4"){
+        else if(Dungeon == "4"){
             Type = "Dragon";
         }
         return Type;

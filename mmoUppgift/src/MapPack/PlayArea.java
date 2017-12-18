@@ -1,6 +1,9 @@
 package MapPack;
 
+import java.util.Random;
+
 public class PlayArea extends Map{
+
 
 
     public PlayArea(){

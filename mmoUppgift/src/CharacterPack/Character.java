@@ -1,7 +1,7 @@
 package CharacterPack;
 
 
-import ItemPack.charItems;
+import ItemPack.CharItems;
 
 import java.util.ArrayList;
 
@@ -17,10 +17,10 @@ public class Character {
     private int power;
     private int attack1;
     private int attack2;
-    private ArrayList<charItems> bag;
-    private ArrayList<charItems> equipedItems;
-    private ArrayList<character> friendList;
-    private ArrayList<charItems> goldBank;
+    private ArrayList<CharItems> bag;
+    private ArrayList<CharItems> equipedItems;
+    private ArrayList<Character> friendList;
+    private ArrayList<CharItems> goldBank;
 
     public Character(String name, String gender, int classes) {
         this.name = name;
@@ -97,23 +97,23 @@ public class Character {
         return power;
     }
 
-    public ArrayList<charItems> getBag() {
+    public ArrayList<CharItems> getBag() {
         return bag;
     }
 
-    public ArrayList<charItems> getEquipedItems() {
+    public ArrayList<CharItems> getEquipedItems() {
         return equipedItems;
     }
 
-    public ArrayList<character> getFriendList() {
+    public ArrayList<Character> getFriendList() {
         return friendList;
     }
 
-    public ArrayList<charItems> getGoldBank() {
+    public ArrayList<CharItems> getGoldBank() {
         return goldBank;
     }
 
-    public void setGoldBank(ArrayList<charItems> goldBank) {
+    public void setGoldBank(ArrayList<CharItems> goldBank) {
         this.goldBank = goldBank;
     }
 }

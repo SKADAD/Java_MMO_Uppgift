@@ -1,17 +1,21 @@
 package VendorPack;
 
-public class MainVendor {
-    private ArrayList<charitems> sellableItems;
+import ItemPack.CharItems;
 
-    public MainVendor(ArrayList<charitems> sellableItems) {
+import java.util.ArrayList;
+
+public class MainVendor {
+    private ArrayList<CharItems> sellableItems;
+
+    public MainVendor(ArrayList<CharItems> sellableItems) {
         this.sellableItems = new ArrayList<>();
     }
 
-    public ArrayList<charitems> getSellableItems() {
+    public ArrayList<CharItems> getSellableItems() {
         return sellableItems;
     }
 
-    public void setSellableItems(ArrayList<charitems> sellableItems) {
+    public void setSellableItems(ArrayList<CharItems> sellableItems) {
         this.sellableItems = sellableItems;
     }
 }

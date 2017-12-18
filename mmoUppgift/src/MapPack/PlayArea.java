@@ -19,7 +19,6 @@ public class PlayArea extends Map{
             int randNumY = num.nextInt(yCordinateBase);
             firstlist.add(randNumX);
             firstlist.add(randNumY);
-            new ArrayList<>(Arrays.asList(array));
 
 
         }

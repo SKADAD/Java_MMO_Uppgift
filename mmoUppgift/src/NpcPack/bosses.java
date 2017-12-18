@@ -1,6 +1,6 @@
 package NpcPack;
 
-public class bosses {
+public class bosses extends Npc {
     private String name;
     private int basePower;
     private int baseArmor;

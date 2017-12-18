@@ -1,6 +1,6 @@
 package NpcPack;
 
-public class mobs {
+public class mobs extends Npc {
     private String name;
     private int basePower;
     private int baseArmor;
@@ -13,7 +13,6 @@ public class mobs {
         this.basePower = 35;
         this.baseArmor = 15;
         this.baseHp = 120;
-        this.neutral = false; // Ska vi ha neutral mobs? Står inte som krav så vi kan skippa det krånglet :D:D:D:D:D
         this.type = type;
 
     }

@@ -11,4 +11,19 @@ public class Map {
 
     }
 
+    public int getxCordinateBase() {
+        return xCordinateBase;
+    }
+
+    public void setxCordinateBase(int xCordinateBase) {
+        this.xCordinateBase = xCordinateBase;
+    }
+
+    public int getyCordinateBase() {
+        return yCordinateBase;
+    }
+
+    public void setyCordinateBase(int yCordinateBase) {
+        this.yCordinateBase = yCordinateBase;
+    }
 }

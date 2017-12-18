@@ -9,7 +9,7 @@ public class PlayArea extends Map{
 
         String[][] map = new String[xCordinateBase][yCordinateBase];
 
-        int forLoopNum = (((xCordinateBase+yCordinateBase)/2)/10;
+        int forLoopNum = (((xCordinateBase+yCordinateBase)/2)/10);
 
 
         for(int i = 0;forLoopNum >= i; i++ ){

@@ -1,25 +1,27 @@
 import java.util.ArrayList;
 
 public class User {
-    private String Username;
-    private String Password;
+    private String username;
+    private String password;
     private String email;
-    private ArrayList<Character> ListofCharacters;
+    private ArrayList<Character> listofCharacters;
+    private boolean admin;
 
 
-    public User(String Username, String Password, String email){
-        this.Username = Username;
-        this.Password = Password;
+    public User(String Username, String Password, String email,boolean admin){
+        this.username = Username;
+        this.password = Password;
         this.email = email;
-        this.ListofCharacters = new ArrayList<>();
+        this.listofCharacters = new ArrayList<>();
+        this.admin = true;
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public String getEmail() {
@@ -27,15 +29,15 @@ public class User {
     }
 
     public ArrayList<Character> getListofCharacters() {
-        return ListofCharacters;
+        return listofCharacters;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        username = username;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        password = password;
     }
 
     public void setEmail(String email) {
@@ -43,6 +45,11 @@ public class User {
     }
 
     public void setListofCharacters(ArrayList<Character> listofCharacters) {
-        ListofCharacters = listofCharacters;
+        listofCharacters = listofCharacters;
+    }
+
+    public boolean isAdmin() {
+        return true;
     }
 }
+

@@ -35,8 +35,8 @@ public class equipableItems {
         this.weapon = weapon;
     }
 
-    public int MasterSwordAndMirrorShield(int Stats){
-        int powerStat = 50;
-        return powerStat;
-    }
+//    public int MasterSwordAndMirrorShield(int Stats){
+//        int powerStat = 50;
+//        return powerStat;
+//    }
 }

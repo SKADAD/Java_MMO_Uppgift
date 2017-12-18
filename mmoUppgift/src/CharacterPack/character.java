@@ -20,6 +20,7 @@ public class character {
     private ArrayList<charItems> bag;
     private ArrayList<charItems> equipedItems;
     private ArrayList<character> friendList;
+    private ArrayList<charItems> goldBank;
 
     public character(String name, String gender, int classes) {
         this.name = name;
@@ -27,6 +28,7 @@ public class character {
         this.bag = new ArrayList<>();
         this.equipedItems = new ArrayList<>();
         this.friendList = new ArrayList<>();
+        this.goldBank = new ArrayList<>();
         if(classes ==0 ){
             Tank tank = new Tank();
             armor =tank.getBaseArmor();
@@ -105,5 +107,13 @@ public class character {
 
     public ArrayList<character> getFriendList() {
         return friendList;
+    }
+
+    public ArrayList<charItems> getGoldBank() {
+        return goldBank;
+    }
+
+    public void setGoldBank(ArrayList<charItems> goldBank) {
+        this.goldBank = goldBank;
     }
 }

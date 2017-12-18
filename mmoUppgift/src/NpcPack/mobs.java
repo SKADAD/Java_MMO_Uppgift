@@ -5,10 +5,9 @@ public class mobs extends Npc {
     private int basePower;
     private int baseArmor;
     private int baseHp;
-    private boolean neutral;
     private String type;
 
-    public mobs(String Name, int basePower, int baseArmor, int baseHp, boolean Neutral) {
+    public mobs(String Name, int basePower, int baseArmor, int baseHp) {
         this.name = Name;
         this.basePower = 35;
         this.baseArmor = 15;
@@ -19,10 +18,6 @@ public class mobs extends Npc {
 
     public String getName() {
         return name;
-    }
-
-    public boolean isNeutral() {
-        return neutral;
     }
 
     public String getType() {

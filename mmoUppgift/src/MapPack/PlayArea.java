@@ -15,8 +15,8 @@ public class PlayArea extends Map{
         int forLoopNum = (((xCordinateBase+yCordinateBase)/2)/10);
         for(int i = 0;forLoopNum >= i; i++ ) {
             Random num = new Random();
-            int randNum = num.nextInt((xCordinateBase + yCordinateBase) / 2);
-            int randNum1 = num.nextInt((xCordinateBase + yCordinateBase) / 2);
+            int randNum = num.nextInt((xCordinateBase + yCordinateBase);
+            int randNum1 = num.nextInt((xCordinateBase + yCordinateBase);
             map[randNum][randNum1].set("1");
 
         }

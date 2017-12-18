@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 
 
-public class character {
+public class Character {
     private String name;
     private String gender;
     private String fightclass;
@@ -22,7 +22,7 @@ public class character {
     private ArrayList<character> friendList;
     private ArrayList<charItems> goldBank;
 
-    public character(String name, String gender, int classes) {
+    public Character(String name, String gender, int classes) {
         this.name = name;
         this.gender = gender;
         this.bag = new ArrayList<>();

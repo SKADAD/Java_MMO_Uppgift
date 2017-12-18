@@ -1,13 +1,13 @@
 package NpcPack;
 
-public class mobs extends Npc {
+public class Mobs extends Npc {
     private String name;
     private int basePower;
     private int baseArmor;
     private int baseHp;
     private String type;
 
-    public mobs(String Name, int basePower, int baseArmor, int baseHp) {
+    public Mobs(String Name, int basePower, int baseArmor, int baseHp) {
         this.name = Name;
         this.basePower = 35;
         this.baseArmor = 15;

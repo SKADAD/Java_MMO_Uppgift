@@ -1,16 +1,16 @@
 package ItemPack;
 
-public class equipableItems {
+public class EquipableItems extends CharItems {
     private String helm;
     private String cloak;
     private String weapon;
 
-    public equipableItems(String helm, String cloak, String weapon) {
+    public EquipableItems(String itemType, String subType, String helm, String cloak, String weapon) {
+        super(itemType,subType);
         this.helm = helm;
         this.cloak = cloak;
         this.weapon = weapon;
     }
-
     public String getHelm() {
         return helm;
     }

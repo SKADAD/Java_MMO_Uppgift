@@ -1,11 +1,11 @@
 package ItemPack;
 
-public class charItems {
+public class CharItems {
     private String itemName;
     private String subType;
 
 
-    public charItems(String itemName, String subType) {
+    public CharItems(String itemName, String subType) {
         this.itemName = itemName;
         this.subType = subType;
     }

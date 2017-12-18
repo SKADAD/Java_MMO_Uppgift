@@ -1,10 +1,13 @@
 package ItemPack;
 
-public class consumableItems {
+import CharacterPack.Character;
+
+public class ConsumableItems extends CharItems {
     private String healingPot;
     private String manaPot;
 
-    public consumableItems(String healingPot, String manaPot) {
+    public ConsumableItems(String itemName, String subType, String healingPot, String manaPot) {
+        super(itemName,subType);
         this.healingPot = healingPot;
         this.manaPot = manaPot;
     }

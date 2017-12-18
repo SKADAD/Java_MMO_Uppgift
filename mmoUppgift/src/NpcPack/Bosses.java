@@ -1,13 +1,13 @@
 package NpcPack;
 
-public class bosses extends Npc {
+public class Bosses extends Npc {
     private String name;
     private int basePower;
     private int baseArmor;
     private int baseHp;
     private String type;
 
-    public bosses(String Name, int basePower, int baseArmor, int baseHp, String Type) {
+    public Bosses(String Name, int basePower, int baseArmor, int baseHp, String Type) {
        this.name = Name;
         this.basePower = 50;
         this.baseArmor = 65;

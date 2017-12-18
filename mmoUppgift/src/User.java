@@ -13,7 +13,7 @@ public class User {
         this.password = Password;
         this.email = email;
         this.listofCharacters = new ArrayList<>();
-        this.admin = true;
+        this.admin = false;
     }
 
     public String getUsername() {

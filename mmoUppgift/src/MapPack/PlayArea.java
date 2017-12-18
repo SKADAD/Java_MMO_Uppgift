@@ -8,20 +8,21 @@ public class PlayArea extends Map{
     public PlayArea(int xCordinateBase,int yCordinateBase){
         super(xCordinateBase, yCordinateBase);
 
-        String[][] map = new String[xCordinateBase][yCordinateBase];
-        ArrayList<ArrayList<Integer>> myDubbelArray = new ArrayList<>();
+        //String[][] map = new String[xCordinateBase][yCordinateBase];
+        //ArrayList<ArrayList<Integer>> myDubbelArray = new ArrayList<>();
+        ArrayList<Integer> firstlist = new ArrayList<>();
 
-
-        int forLoopNum = (((xCordinateBase+yCordinateBase)/2)/10);
+        int forLoopNum = (xCordinateBase/10);
         for(int i = 0;forLoopNum >= i; i++ ) {
             Random num = new Random();
-            int randNum = num.nextInt((xCordinateBase + yCordinateBase) / 2);
-            int randNum1 = num.nextInt((xCordinateBase + yCordinateBase) / 2);
-            map[randNum][randNum1].set("1");
+            int randNumX = num.nextInt(xCordinateBase);
+            int randNumY = num.nextInt(yCordinateBase);
+            firstlist.add(randNumX);
+            firstlist.add(randNumY);
+            new ArrayList<>(Arrays.asList(array));
+
 
         }
 
     }
 }
-
-//comment

@@ -1,14 +1,13 @@
 package CharacterPack;
 
 
-import ItemPack.CharItems;
-import ItemPack.CharItems;
+import ItemPack.charItems;
 
 import java.util.ArrayList;
 
 
 
-public class Character {
+public class character {
     private String name;
     private String gender;
     private String fightclass;
@@ -16,11 +15,13 @@ public class Character {
     private int hp;
     private int mana;
     private int power;
-    private ArrayList<CharItems> bag;
-    private ArrayList<CharItems> equipedItems;
-    private ArrayList<Character> friendList;
+    private int attack1;
+    private int attack2;
+    private ArrayList<charItems> bag;
+    private ArrayList<charItems> equipedItems;
+    private ArrayList<character> friendList;
 
-    public Character(String name, String gender,int classes) {
+    public character(String name, String gender, int classes) {
         this.name = name;
         this.gender = gender;
         this.bag = new ArrayList<>();
@@ -32,6 +33,8 @@ public class Character {
             hp =tank.getBaseHp();
             mana =tank.getBaseMana();
             power=tank.getBasePower();
+            attack1 = tank.shieldBash(armor,power);
+            attack2 = tank.shieldBlock(armor);
             fightclass = "Tank";
         }
         if(classes ==1){
@@ -40,6 +43,8 @@ public class Character {
             hp =warrior.getBaseHp();
             mana =warrior.getBaseMana();
             power =warrior.getBasePower();
+            attack1 = warrior.rage(power);
+            attack2 = warrior.excalibur(power,mana);
             fightclass ="Warrior";
         }
         if(classes ==2){
@@ -48,6 +53,8 @@ public class Character {
             hp = wizard.getBaseHp();
             mana = wizard.getBaseMana();
             power = wizard.getBasePower();
+            attack1 = wizard.lightningBolt(power);
+            attack2 = wizard.heal(hp);
             fightclass = "Wizard";
         }
     }
@@ -62,6 +69,14 @@ public class Character {
 
     public String getFightclass() {
         return fightclass;
+    }
+
+    public int getAttack1() {
+        return attack1;
+    }
+
+    public int getAttack2() {
+        return attack2;
     }
 
     public int getArmor() {
@@ -80,15 +95,15 @@ public class Character {
         return power;
     }
 
-    public ArrayList<CharItems> getBag() {
+    public ArrayList<charItems> getBag() {
         return bag;
     }
 
-    public ArrayList<CharItems> getEquipedItems() {
+    public ArrayList<charItems> getEquipedItems() {
         return equipedItems;
     }
 
-    public ArrayList<Character> getFriendList() {
+    public ArrayList<character> getFriendList() {
         return friendList;
     }
 }

@@ -2,13 +2,15 @@ package CharacterPack;
 
 
 
-public class Warrior {
+public class Warrior{
     private int basePower;
     private int baseArmor;
     private int baseMana;
     private int baseHp;
 
     public Warrior() {
+        super();
+
         this.basePower = 40;
         this.baseArmor = 25;
         this.baseMana = 10;
@@ -32,11 +34,11 @@ public class Warrior {
         return baseHp;
     }
 
-    public int Rage(int Power) {
+    public int rage(int Power) {
         return Power * 3;
     }
 
-    public int Excalibur(int Power, int Mana){
+    public int excalibur(int Power, int Mana){
         return Power*Mana;
     }
 

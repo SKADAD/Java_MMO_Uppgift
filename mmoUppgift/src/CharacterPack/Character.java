@@ -47,7 +47,7 @@ public class Character {
             power =warrior.getBasePower();
             attack1 = warrior.rage(power);
             attack2 = warrior.excalibur(power,mana);
-            fightclass ="Warrior";
+            fightclass = "Warrior";
         }
         if(classes ==2){
             Wizard wizard = new Wizard();
@@ -69,7 +69,7 @@ public class Character {
         return gender;
     }
 
-    public String getFightclass() {
+    public java.lang.String getFightclass() {
         return fightclass;
     }
 

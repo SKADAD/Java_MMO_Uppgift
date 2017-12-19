@@ -8,7 +8,6 @@ public class Map {
     public Map(int xCordinateBase, int yCordinateBase) {
         this.xCordinateBase = xCordinateBase;
         this.yCordinateBase = yCordinateBase;
-
     }
 
     public int getxCordinateBase() {
